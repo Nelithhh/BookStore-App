@@ -1,6 +1,4 @@
-import { timeStamp } from "console";
 import mongoose from "mongoose";
-import { title } from "process";
 
 const bookSchema = mongoose.Schema(
     {
@@ -12,8 +10,8 @@ const bookSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        publisher: {
-            type: number,
+        publishYear: {
+            type: Number,
             required: true,
         },
     },
